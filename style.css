@@ -1,0 +1,86 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dropdown container */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown button */
+#dropdownBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Dropdown menu */
+#dropdownMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  position: absolute;
+  width: 150px;
+  display: none; /* hidden by default */
+}
+
+#dropdownMenu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dropdownMenu li:hover {
+  background-color: #eee;
+}
+
+/* Show the dropdown when JS adds .show */
+#dropdownMenu.show {
+  display: block;
+}
+
+/* Feedback text */
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Light/Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode #dropdownBtn {
+  background-color: #333;
+}
+
+/* Toggle Button */
+.toggle-container {
+  margin-top: 30px;
+}
+
+#toggleModeBtn {
+  background-color: #555;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#toggleModeBtn:hover {
+  background-color: #444;
+}
+
